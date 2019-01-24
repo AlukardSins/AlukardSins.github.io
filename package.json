@@ -1,20 +1,19 @@
 {
-  "name": "alukardsins.github.io",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "concurrently": "^4.1.0",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.6"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3"
   },
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:5000/",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -23,20 +22,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "description": "This is a page to demonstrate my skills as shown on my Curriculum Vitae.",
-  "main": "server.js",
-  "devDependencies": {
-    "nodemon": "^1.18.9"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlukardSins/AlukardSins.github.io.git"
-  },
-  "author": "AlukardSins",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/AlukardSins/AlukardSins.github.io/issues"
-  },
-  "homepage": "https://github.com/AlukardSins/AlukardSins.github.io#readme"
+  ]
 }
