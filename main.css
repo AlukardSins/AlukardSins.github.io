@@ -1,0 +1,9 @@
+html, body {
+	font-family: Helvetica;
+	margin: 0px;
+	outline: none;
+	overflow-x: hidden;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
